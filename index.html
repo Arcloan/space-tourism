@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[url('./assets/home/background-home-mobile.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] lg:bg-[url('./assets/home/background-home-desktop.jpg')] min-h-[100svh] bg-cover bg-no-repeat"
+  >
+    <header class="overflow-x-hidden">
+      <div
+        class="flex justify-between max-w-[90%] my-6 mx-auto items-center lg:my-12 lg:grid lg:grid-cols-2"
+      >
+        <div class="flex items-center">
+          <img src="assets/shared/logo.svg" alt="" class="size-10" />
+          <div
+            class="max-lg:hidden w-full h-0.5 bg-white/30 z-[1] scale-[0.85]"
+          ></div>
+        </div>
+        <img
+          src="assets/shared/icon-hamburger.svg"
+          alt=""
+          class="size-6 md:hidden"
+        />
+
+        <nav class="max-md:hidden">
+          <ul class="flex gap-12 items-center lg:py-6 relative justify-end">
+            <div
+              class="max-lg:hidden w-[130%] h-full bg-white/10 backdrop-blur-md absolute translate-x-20"
+            ></div>
+            <li class="relative group">
+              <div
+                class="hidden group-has-[:hover]:block group-has-[:focus]:block w-full h-1 bg-white absolute -bottom-6"
+              ></div>
+              <a href="./index.html" class="text-lightBlue"
+                ><span class="text-white">00</span> HOME</a
+              >
+            </li>
+            <li class="relative group">
+              <div
+                class="hidden group-has-[:hover]:block group-has-[:focus]:block w-full h-1 bg-white absolute -bottom-6"
+              ></div>
+              <a href="./destination.html" class="text-lightBlue"
+                ><span class="text-white">01</span> DESTINATION</a
+              >
+            </li>
+            <li class="relative group">
+              <div
+                class="hidden group-has-[:hover]:block group-has-[:focus]:block w-full h-1 bg-white absolute -bottom-6"
+              ></div>
+              <a href="./crew-html" class="text-lightBlue"
+                ><span class="text-white">02</span> CREW</a
+              >
+            </li>
+            <li class="relative group">
+              <div
+                class="hidden group-has-[:hover]:block group-has-[:focus]:block w-full h-1 bg-white absolute -bottom-6"
+              ></div>
+              <a href="./technology.html" class="text-lightBlue"
+                ><span class="text-white">03</span> TECHNOLOGY</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="p-6 md:py-32 md:px-10 lg:px-36">
+      <div
+        class="grid gap-4 text-center text-lightBlue lg:h-full lg:grid-cols-2 lg:content-end lg:pt-24"
+      >
+        <div class="grid gap-4">
+          <p class="uppercase font-Barlow md:text-xl lg:text-left">
+            so, you want to travel to
+          </p>
+          <p
+            class="uppercase text-[5rem] text-white font-Bellefair md:text-[8rem] lg:text-left lg:text-[7rem]"
+          >
+            space
+          </p>
+          <p
+            class="font-Barlow md:max-w-[55ch] justify-self-center lg:text-left lg:max-w-none"
+          >
+            Let's face it; if you want to go to space, you might as well
+            genuinely go to the outer space and not hover kind on the edge of
+            it. Well sit back, and relax because we'll give you a truly out of
+            this world experience!
+          </p>
+        </div>
+        <div
+          class="grid rounded-[50%] bg-white py-12 px-8 md:py-20 md:px-16 w-min justify-self-center mt-36 md:mt-20 lg:justify-self-end lg:p-20 lg:mb-4"
+        >
+          <p
+            class="uppercase text-black text-xl font-Bellefair place-self-center"
+          >
+            explore
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
