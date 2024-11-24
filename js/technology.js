@@ -21,8 +21,8 @@ function updateInfo(e) {
     for (let [node, nodeVal] of Object.entries(technologySelected)) {
         if (node === "images") {
             let container = document.querySelector("picture");
-            container.querySelector("source").srcset = "." + nodeVal["portrait"];
-            container.querySelector("img").src = "." + nodeVal["landscape"];
+            container.querySelector("source").srcset = nodeVal["portrait"];
+            container.querySelector("img").src = nodeVal["landscape"];
         }
         else {
             document.querySelector("." + node).textContent = nodeVal;

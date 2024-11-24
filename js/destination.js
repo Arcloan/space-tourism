@@ -16,7 +16,7 @@ destinationNav.addEventListener("click", e => {
     for (let [key, value] of Object.entries(planetData)) {
         let el = document.querySelector("." + key);
         if (key === "images") {
-            el.src = "." + value["png"];
+            el.src = value["png"];
         }
         else {
             el.textContent = value;

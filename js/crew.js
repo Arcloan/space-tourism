@@ -26,7 +26,7 @@ function displayCrewMember(e) {
     let crewMember = crew.filter((el, idx) => idx === Number(selected))[0];
     for (let [node, nodeVal] of Object.entries(crewMember)) {
         if (node === "images") {
-            document.querySelector("." + node).src = "." + nodeVal["png"];
+            document.querySelector("." + node).src = nodeVal["png"];
         }
         else {
             document.querySelector("." + node).textContent = nodeVal;
