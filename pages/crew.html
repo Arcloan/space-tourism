@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <title>Technology</title>
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="./js/technology.js"></script>
-  </head>
-  <body
-    class="bg-[url('./assets/technology/background-technology-mobile.jpg')] md:bg-[url('./assets/technology/background-technology-tablet.jpg')] lg:bg-[url('./assets/technology/background-technology-desktop.jpg')] min-h-[100svh] bg-cover bg-no-repeat"
+    <title>Crew</title>
+    <link rel="stylesheet" href="../style.css">
+    <script type="module" src="../js/crew.js"></script>
+</head>
+<body>
+    <body
+    class="bg-[url('../assets/crew/background-crew-mobile.jpg')] md:bg-[url('../assets/crew/background-crew-tablet.jpg')] lg:bg-[url('../assets/crew/background-crew-desktop.jpg')] min-h-[100svh] bg-cover bg-no-repeat"
   >
     <header class="overflow-x-hidden">
       <div
         class="fixed inset-0 bg-darkBlue hidden data-[navOpen]:flex data-[navOpen]:flex-col z-[1] mobileNav"
       >
         <img
-          src="assets/shared/icon-close.svg"
+          src="../assets/shared/icon-close.svg"
           alt=""
           class="self-end mr-6 mt-8 size-8 closeMenu hover:cursor-pointer"
         />
@@ -27,7 +28,7 @@
             <li
               class="Home w-full border-8 border-transparent hover:border-r-white focus:border-r-white data-[active]:border-r-white"
             >
-              <a href="./index.html">00 HOME</a>
+              <a href="../index.html">00 HOME</a>
             </li>
             <li
               class="Destination w-full border-8 border-transparent hover:border-r-white focus:border-r-white data-[active]:border-r-white"
@@ -51,16 +52,16 @@
         class="flex justify-between max-w-[90%] my-6 mx-auto items-center lg:my-12 lg:grid lg:grid-cols-2"
       >
         <div class="flex items-center">
-          <img src="assets/shared/logo.svg" alt="" class="size-10" />
+          <img src="../assets/shared/logo.svg" alt="" class="size-10" />
           <div
             class="max-lg:hidden w-full h-0.5 bg-white/30 z-[1] scale-[0.85]"
           ></div>
         </div>
         <img
-          src="assets/shared/icon-hamburger.svg"
+          src="../assets/shared/icon-hamburger.svg"
           alt=""
           class="size-6 md:hidden menuOpen hover:cursor-pointer"
-          data-current="Technology"
+          data-current="Crew"
         />
 
         <nav class="max-md:hidden">
@@ -72,12 +73,13 @@
               <div
                 class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
               ></div>
-              <a href="./index.html" class="text-lightBlue"
+              <a href="../index.html" class="text-lightBlue"
                 ><span class="text-white">00</span> HOME</a
               >
             </li>
             <li class="relative group">
               <div
+                
                 class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
               ></div>
               <a href="./destination.html" class="text-lightBlue"
@@ -85,7 +87,7 @@
               >
             </li>
             <li class="relative group">
-              <div
+              <div data-active=""
                 class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
               ></div>
               <a href="./crew.html" class="text-lightBlue"
@@ -94,7 +96,6 @@
             </li>
             <li class="relative group">
               <div
-                data-active=""
                 class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
               ></div>
               <a href="./technology.html" class="text-lightBlue"
@@ -105,69 +106,30 @@
         </nav>
       </div>
     </header>
-    <main class="p-6 md:p-10 lg:px-36 lg:pr-0">
-      <div class="grid gap-8 lg:grid-cols-2 lg:gap-x-12 lg:items-center">
+    <main class="p-6 md:p-10 lg:px-36">
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-x-12 lg:items-center relative">
         <div
           class="flex gap-4 justify-self-center md:justify-self-start lg:col-span-2"
         >
-          <p class="text-white/30">03</p>
-          <p class="text-white">SPACE LAUNCH 101</p>
+          <p class="text-white/30">02</p>
+          <p class="text-white">MEET YOUR CREW</p>
         </div>
-        <picture class="lg:order-2">
-          <source
-            srcset="./assets/technology/image-launch-vehicle-portrait.jpg"
-            media="(min-width : 1024px)"
-          />
-          <img
-            src="./assets/technology/image-launch-vehicle-landscape.jpg"
-            alt=""
-            class="w-full max-md:h-48 lg:h-auto"
-          />
-        </picture>
-        <div class="grid lg:grid-cols-[auto_1fr] lg:gap-4">
-          <div
-            class="flex gap-4 justify-self-center mb-4 lg:flex-col lg:self-center selectionMenu"
-          >
-            <div
-              data-active
-              class="hover:cursor-pointer hover:border-white p-4 rounded-[50%] border-2 border-white/30 bg-darkBlue text-white data-[active]:bg-white data-[active]:text-darkBlue"
-            >
-              1
-            </div>
-            <div
-              class="hover:cursor-pointer hover:border-white p-4 rounded-[50%] border-2 border-white/30 bg-darkBlue text-white data-[active]:bg-white data-[active]:text-darkBlue"
-            >
-              2
-            </div>
-            <div
-              class="hover:cursor-pointer hover:border-white p-4 rounded-[50%] border-2 border-white/30 bg-darkBlue text-white data-[active]:bg-white data-[active]:text-darkBlue"
-            >
-              3
-            </div>
-          </div>
-          <div class="grid">
-            <p
-              class="uppercase text-white/30 justify-self-center md:text-xl lg:justify-self-start"
-            >
-              THE TERMINOLOGY
-            </p>
-            <p
-              class="name uppercase text-white text-2xl justify-self-center md:text-4xl md:mt-4 lg:justify-self-start"
-            >
-              Launch vehicle
-            </p>
-            <p
-              class="description text-lightBlue text-center mt-4 mb-16 md:mb-10 md:mt-8 md:max-w-[60ch] justify-self-center lg:justify-self-start lg:text-left"
-            >
-              A launch vehicle or carrier rocket is a rocket-propelled vehicle
-              used to carry a payload from Earth's surface to space, usually to
-              Earth orbit or beyond. Our WEB-X carrier rocket is the most
-              powerful in operation. Standing 150 metres tall, it's quite an
-              awe-inspiring sight on the launch pad!
-            </p>
+        <div class="grid">
+          <p class="role uppercase text-white/30 justify-self-center md:text-xl lg:justify-self-start">Commander</p>
+          <p class="name uppercase text-white text-2xl justify-self-center md:text-4xl md:mt-4 lg:justify-self-start">Douglas Hurley</p>
+          <p class="bio text-lightBlue text-center mt-4 mb-16 md:mb-10 md:mt-8 md:max-w-[60ch] justify-self-center lg:justify-self-start lg:text-left">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+            and former NASA astronaut. He launched into space for the third time as 
+            commander of Crew Dragon Demo-2.
+          </p>
+          <div class="flex gap-4 justify-self-center lg:justify-self-start lg:absolute lg:col-[1] lg:bottom-4 crewMenu">
+            <div data-active class="crew_0 size-4 rounded-[50%] bg-white/30 data-[active]:bg-white hover:cursor-pointer hover:bg-white/50"></div>
+            <div class="crew_1 size-4 rounded-[50%] bg-white/30 data-[active]:bg-white hover:cursor-pointer hover:bg-white/50"></div>
+            <div class="crew_2 size-4 rounded-[50%] bg-white/30 data-[active]:bg-white hover:cursor-pointer hover:bg-white/50"></div>
+            <div class="crew_3 size-4 rounded-[50%] bg-white/30 data-[active]:bg-white hover:cursor-pointer hover:bg-white/50"></div>
           </div>
         </div>
+        <img src="../assets/crew/image-douglas-hurley.png" alt="" class="images justify-self-center">
       </div>
     </main>
-  </body>
+</body>
 </html>
