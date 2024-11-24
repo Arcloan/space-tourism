@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Space Travel</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Technology</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="./js/index.js" type="module"></script>
+    <script type="module" src="./js/technology.js"></script>
   </head>
   <body
-    class="bg-[url('./assets/home/background-home-mobile.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] lg:bg-[url('./assets/home/background-home-desktop.jpg')] min-h-[100svh] bg-cover bg-no-repeat"
+    class="bg-[url('./assets/technology/background-technology-mobile.jpg')] md:bg-[url('./assets/technology/background-technology-tablet.jpg')] lg:bg-[url('./assets/technology/background-technology-desktop.jpg')] min-h-[100svh] bg-cover bg-no-repeat"
   >
     <header class="overflow-x-hidden">
       <div
@@ -60,7 +60,7 @@
           src="assets/shared/icon-hamburger.svg"
           alt=""
           class="size-6 md:hidden menuOpen hover:cursor-pointer"
-          data-current="Home"
+          data-current="Technology"
         />
 
         <nav class="max-md:hidden">
@@ -70,7 +70,6 @@
             ></div>
             <li class="relative group">
               <div
-                data-active
                 class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
               ></div>
               <a href="./index.html" class="text-lightBlue"
@@ -95,6 +94,7 @@
             </li>
             <li class="relative group">
               <div
+                data-active=""
                 class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
               ></div>
               <a href="./technology.html" class="text-lightBlue"
@@ -105,39 +105,67 @@
         </nav>
       </div>
     </header>
-    <main class="p-6 md:py-32 md:px-10 lg:px-36">
-      <div
-        class="grid gap-4 text-center text-lightBlue lg:h-full lg:grid-cols-2 lg:content-end lg:pt-24"
-      >
-        <div class="grid gap-4">
-          <p class="uppercase font-Barlow md:text-xl lg:text-left">
-            so, you want to travel to
-          </p>
-          <p
-            class="uppercase text-[5rem] text-white font-Bellefair md:text-[8rem] lg:text-left lg:text-[7rem]"
-          >
-            space
-          </p>
-          <p
-            class="font-Barlow md:max-w-[55ch] justify-self-center lg:text-left lg:max-w-none"
-          >
-            Let's face it; if you want to go to space, you might as well
-            genuinely go to the outer space and not hover kind on the edge of
-            it. Well sit back, and relax because we'll give you a truly out of
-            this world experience!
-          </p>
-        </div>
+    <main class="p-6 md:p-10 lg:px-36 lg:pr-0">
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-x-12 lg:items-center">
         <div
-          class="relative group hover:cursor-pointer grid rounded-[50%] bg-white py-12 px-8 md:py-20 md:px-16 w-min justify-self-center mt-36 md:mt-20 lg:justify-self-end lg:p-20 lg:mb-4"
+          class="flex gap-4 justify-self-center md:justify-self-start lg:col-span-2"
         >
-          <p
-            class="uppercase group-hover:text-lightBlue text-black text-xl font-Bellefair place-self-center"
-          >
-            explore
-          </p>
+          <p class="text-white/30">03</p>
+          <p class="text-white">SPACE LAUNCH 101</p>
+        </div>
+        <picture class="lg:order-2">
+          <source
+            srcset="./assets/technology/image-launch-vehicle-portrait.jpg"
+            media="(min-width : 1024px)"
+          />
+          <img
+            src="./assets/technology/image-launch-vehicle-landscape.jpg"
+            alt=""
+            class="w-full max-md:h-48 lg:h-auto"
+          />
+        </picture>
+        <div class="grid lg:grid-cols-[auto_1fr] lg:gap-4">
           <div
-            class="hidden group-hover:block absolute -inset-24 rounded-[50%] bg-white/30"
-          ></div>
+            class="flex gap-4 justify-self-center mb-4 lg:flex-col lg:self-center selectionMenu"
+          >
+            <div
+              data-active
+              class="hover:cursor-pointer hover:border-white p-4 rounded-[50%] border-2 border-white/30 bg-darkBlue text-white data-[active]:bg-white data-[active]:text-darkBlue"
+            >
+              1
+            </div>
+            <div
+              class="hover:cursor-pointer hover:border-white p-4 rounded-[50%] border-2 border-white/30 bg-darkBlue text-white data-[active]:bg-white data-[active]:text-darkBlue"
+            >
+              2
+            </div>
+            <div
+              class="hover:cursor-pointer hover:border-white p-4 rounded-[50%] border-2 border-white/30 bg-darkBlue text-white data-[active]:bg-white data-[active]:text-darkBlue"
+            >
+              3
+            </div>
+          </div>
+          <div class="grid">
+            <p
+              class="uppercase text-white/30 justify-self-center md:text-xl lg:justify-self-start"
+            >
+              THE TERMINOLOGY
+            </p>
+            <p
+              class="name uppercase text-white text-2xl justify-self-center md:text-4xl md:mt-4 lg:justify-self-start"
+            >
+              Launch vehicle
+            </p>
+            <p
+              class="description text-lightBlue text-center mt-4 mb-16 md:mb-10 md:mt-8 md:max-w-[60ch] justify-self-center lg:justify-self-start lg:text-left"
+            >
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </div>
         </div>
       </div>
     </main>
