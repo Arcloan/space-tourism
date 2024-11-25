@@ -1,5 +1,5 @@
 export function readData(category) {
-    return fetch("/data.json")
+    return fetch("./data.json")
     .then(resp => {
         return resp.json();
     })
