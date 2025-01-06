@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,20 +9,20 @@
     <script type="module" src="./js/destination.js"></script>
   </head>
   <body
-    class="bg-[url('./assets/destination/background-destination-mobile.jpg')] md:bg-[url('./assets/destination/background-destination-tablet.jpg')] lg:bg-[url('./assets/destination/background-destination-desktop.jpg')] min-h-[100svh] bg-cover bg-no-repeat"
+    class="min-h-[100svh] bg-[url('./assets/destination/background-destination-mobile.jpg')] bg-cover bg-no-repeat md:bg-[url('./assets/destination/background-destination-tablet.jpg')] lg:bg-[url('./assets/destination/background-destination-desktop.jpg')]"
   >
     <header class="overflow-x-hidden">
       <div
-        class="fixed inset-0 bg-darkBlue hidden data-[navOpen]:flex data-[navOpen]:flex-col z-[1] mobileNav"
+        class="mobileNav fixed inset-0 z-[1] hidden bg-darkBlue data-[navOpen]:flex data-[navOpen]:flex-col"
       >
         <img
           src="./assets/shared/icon-close.svg"
           alt=""
-          class="self-end mr-6 mt-8 size-8 closeMenu hover:cursor-pointer"
+          class="closeMenu mr-6 mt-8 size-8 self-end hover:cursor-pointer"
         />
         <nav class="mt-24">
           <ul
-            class="flex flex-col items-start pl-8 text-white font-Barlow text-2xl gap-8"
+            class="flex flex-col items-start gap-8 pl-8 font-Barlow text-2xl text-white"
           >
             <li
               class="Home w-full border-8 border-transparent hover:border-r-white focus:border-r-white data-[active]:border-r-white"
@@ -48,54 +48,54 @@
         </nav>
       </div>
       <div
-        class="flex justify-between max-w-[90%] my-6 mx-auto items-center lg:my-12 lg:grid lg:grid-cols-2"
+        class="mx-auto my-6 flex max-w-[90%] items-center justify-between lg:my-12 lg:grid lg:grid-cols-2"
       >
         <div class="flex items-center">
           <img src="./assets/shared/logo.svg" alt="" class="size-10" />
           <div
-            class="max-lg:hidden w-full h-0.5 bg-white/30 z-[1] scale-[0.85]"
+            class="z-[1] h-0.5 w-full scale-[0.85] bg-white/30 max-lg:hidden"
           ></div>
         </div>
         <img
           src="./assets/shared/icon-hamburger.svg"
           alt=""
-          class="size-6 md:hidden menuOpen hover:cursor-pointer"
+          class="menuOpen size-6 hover:cursor-pointer md:hidden"
           data-current="Destination"
         />
 
         <nav class="max-md:hidden">
-          <ul class="flex gap-12 items-center lg:py-6 relative justify-end">
+          <ul class="relative flex items-center justify-end gap-12 lg:py-6">
             <div
-              class="max-lg:hidden w-[130%] h-full bg-white/10 backdrop-blur-md absolute translate-x-20"
+              class="absolute h-full w-[130%] translate-x-20 bg-white/10 backdrop-blur-md max-lg:hidden"
             ></div>
-            <li class="relative group">
+            <li class="group relative">
               <div
-                class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
+                class="absolute -bottom-6 hidden h-1 w-full bg-white group-has-[:focus]:block group-has-[:hover]:block group-has-[[data-active]]:block"
               ></div>
               <a href="./index.html" class="text-lightBlue"
                 ><span class="text-white">00</span> HOME</a
               >
             </li>
-            <li class="relative group">
+            <li class="group relative">
               <div
                 data-active=""
-                class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
+                class="absolute -bottom-6 hidden h-1 w-full bg-white group-has-[:focus]:block group-has-[:hover]:block group-has-[[data-active]]:block"
               ></div>
               <a href="./destination.html" class="text-lightBlue"
                 ><span class="text-white">01</span> DESTINATION</a
               >
             </li>
-            <li class="relative group">
+            <li class="group relative">
               <div
-                class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
+                class="absolute -bottom-6 hidden h-1 w-full bg-white group-has-[:focus]:block group-has-[:hover]:block group-has-[[data-active]]:block"
               ></div>
               <a href="./crew.html" class="text-lightBlue"
                 ><span class="text-white">02</span> CREW</a
               >
             </li>
-            <li class="relative group">
+            <li class="group relative">
               <div
-                class="hidden group-has-[:hover]:block group-has-[:focus]:block group-has-[[data-active]]:block w-full h-1 bg-white absolute -bottom-6"
+                class="absolute -bottom-6 hidden h-1 w-full bg-white group-has-[:focus]:block group-has-[:hover]:block group-has-[[data-active]]:block"
               ></div>
               <a href="./technology.html" class="text-lightBlue"
                 ><span class="text-white">03</span> TECHNOLOGY</a
@@ -106,7 +106,7 @@
       </div>
     </header>
     <main class="p-6 md:p-10 lg:px-36">
-      <div class="grid gap-8 lg:grid-cols-2 lg:gap-y-16 lg:gap-x-20">
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-x-20 lg:gap-y-16">
         <div
           class="flex gap-4 justify-self-center md:justify-self-start lg:col-span-2"
         >
@@ -120,41 +120,41 @@
         />
         <div class="grid gap-4">
           <nav class="justify-self-center text-lightBlue lg:justify-self-start">
-            <ul class="flex gap-6 destinationNav">
-              <li class="py-4 relative group">
+            <ul class="destinationNav flex gap-6">
+              <li class="group relative py-4">
                 <div
                   data-active
-                  class="hidden data-[active]:block absolute w-full h-1 bg-white bottom-0 group-hover:block"
+                  class="absolute bottom-0 hidden h-1 w-full bg-white group-hover:block data-[active]:block"
                 ></div>
                 <a href="#" class="uppercase">Moon</a>
               </li>
-              <li class="py-4 relative group">
+              <li class="group relative py-4">
                 <div
-                  class="hidden data-[active]:block absolute w-full h-1 bg-white bottom-0 group-hover:block"
+                  class="absolute bottom-0 hidden h-1 w-full bg-white group-hover:block data-[active]:block"
                 ></div>
                 <a href="#" class="uppercase">Mars</a>
               </li>
-              <li class="py-4 relative group">
+              <li class="group relative py-4">
                 <div
-                  class="hidden data-[active]:block absolute w-full h-1 bg-white bottom-0 group-hover:block"
+                  class="absolute bottom-0 hidden h-1 w-full bg-white group-hover:block data-[active]:block"
                 ></div>
                 <a href="#" class="uppercase">Europa</a>
               </li>
-              <li class="py-4 relative group">
+              <li class="group relative py-4">
                 <div
-                  class="hidden data-[active]:block absolute w-full h-1 bg-white bottom-0 group-hover:block"
+                  class="absolute bottom-0 hidden h-1 w-full bg-white group-hover:block data-[active]:block"
                 ></div>
                 <a href="#" class="uppercase">Titan</a>
               </li>
             </ul>
           </nav>
           <p
-            class="uppercase text-[4rem] text-white font-Bellefair justify-self-center name lg:justify-self-start"
+            class="name justify-self-center font-Bellefair text-[4rem] uppercase text-white lg:justify-self-start"
           >
             Moon
           </p>
           <p
-            class="description text-lightBlue text-center md:max-w-[60ch] md:justify-self-center lg:justify-self-start lg:text-left"
+            class="description text-center text-lightBlue md:max-w-[60ch] md:justify-self-center lg:justify-self-start lg:text-left"
           >
             See our planet as you’ve never seen it before. A perfect relaxing
             trip away to help regain perspective and come back refreshed. While
@@ -162,31 +162,31 @@
             11 landing sites.
           </p>
           <div
-            class="h-[0.125rem] w-full bg-white/30 md:w-[70%] mx-auto lg:mx-0 lg:w-full"
+            class="mx-auto h-[0.125rem] w-full bg-white/30 md:w-[70%] lg:mx-0 lg:w-full"
           ></div>
           <div
-            class="grid gap-4 md:grid-cols-2 lg:justify-start lg:w-max lg:gap-24"
+            class="grid gap-4 md:grid-cols-2 lg:w-max lg:justify-start lg:gap-24"
           >
-            <div class="grid gap-4 justify-center lg:gap-2">
+            <div class="grid justify-center gap-4 lg:gap-2">
               <p
-                class="text-lightBlue font-Barlow text-center lg:text-left uppercase"
+                class="text-center font-Barlow uppercase text-lightBlue lg:text-left"
               >
                 AVG. DISTANCE
               </p>
               <p
-                class="text-white font-Bellefair text-center text-2xl lg:text-left uppercase distance"
+                class="distance text-center font-Bellefair text-2xl uppercase text-white lg:text-left"
               >
                 384,400 KM
               </p>
             </div>
-            <div class="grid gap-4 justify-center lg:gap-2">
+            <div class="grid justify-center gap-4 lg:gap-2">
               <p
-                class="text-lightBlue font-Barlow text-center lg:text-left uppercase"
+                class="text-center font-Barlow uppercase text-lightBlue lg:text-left"
               >
                 EST. TRAVEL TIME
               </p>
               <p
-                class="text-white font-Bellefair text-center text-2xl lg:text-left uppercase travel"
+                class="travel text-center font-Bellefair text-2xl uppercase text-white lg:text-left"
               >
                 3 DAYS
               </p>
